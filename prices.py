@@ -38,6 +38,35 @@ transactions = {
         {"date": "2022-01-04", "amount": 1, "price": 79.80},
     ],
     "BTC-EUR": [
+        {"date": "2019-05-17", "amount": 0.00139986, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-05-17", "amount": 0.00139288, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-05-30", "amount": 0.00111558, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-06-03", "amount": 0.00112628, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-06-17", "amount": 0.00063588, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-07-27", "amount": 0.00144596, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-11-10", "amount": 0.00066865, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2019-12-24", "amount": 0.00120753, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-01-14", "amount": 0.00023248, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-01-14", "amount": 0.00015397, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-01-25", "amount": 0.0000857, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-02-06", "amount": 0.00020637, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-02-10", "amount": 0.00006764, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-03-02", "amount": 0.0000671, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-03-28", "amount": 0.00010557, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-05-01", "amount": 0.00005152, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-05-19", "amount": 0.00007905, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-05-28", "amount": 0.00007962, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-06-15", "amount": 0.00007317, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-07-10", "amount": 0.00007889, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-07-26", "amount": 0.00003114, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-08-07", "amount": 0.00008563, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-08-08", "amount": 0.00005554, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-08-18", "amount": 0.00006064, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-08-30", "amount": 0.00006229, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-09-20", "amount": 0.00006594, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-10-27", "amount": 0.00005015, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-10-27", "amount": 0.00005015, "price": 0.0, "fee": 0.0}, # converted to btc
+        {"date": "2021-11-20", "amount": 0.0000506, "price": 0.0, "fee": 0.0}, # converted to btc
         {"date": "2019-07-17", "amount": 0.01155784, "price": 8480.82, "fee": 2.99},
         {"date": "2021-02-10", "amount": 0.00024730, "price": 36433.48, "fee": 0.99},
         {"date": "2021-02-22", "amount": 0.00020747, "price": 43427.97, "fee": 0.99},
