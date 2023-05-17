@@ -6,7 +6,12 @@ from yfinance import Tickers
 from schemas import Asset
 
 transactions = {
+    "VVSM.DE": [
+        {"date": "2023-03-15", "price": 22.74, "amount": 4, "fee": 3.0},
+    ],
     "VWRL.AS": [
+        {"date": "2023-04-03", "price": 97.95, "amount": 5},
+        {"date": "2023-04-03", "price": 97.77, "amount": 5},
         {"date": "2023-03-15", "price": 94.93, "amount": 5},
         {"date": "2023-02-01", "price": 97.92, "amount": 5},
         {"date": "2023-01-02", "price": 94.22, "amount": 5},
@@ -98,11 +103,11 @@ def get_prices(tickers: list) -> List[Asset]:
         trans = transactions[ticker]
 
         if ticker == "VWRL.AS":
-            total_dividend = 24.79 + 27.20 + 31.11 + 7.08 + 5.69
+            total_dividend = 31.99 + 24.79 + 27.20 + 31.11 + 7.08 + 5.69
         else:
             total_dividend = 0
 
-        if ticker in ["VWRL.AS", "IWDA.AS"]:
+        if ticker in ["VWRL.AS", "IWDA.AS", "VVSM.DE"]:
             ticker_type = "ETF"
         else:
             ticker_type = "Crypto" 

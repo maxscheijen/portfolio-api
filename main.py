@@ -1,6 +1,7 @@
 from datetime import datetime
 from typing import List, Optional
-from fastapi import FastAPI, status, HTTPException
+
+from fastapi import FastAPI, HTTPException, status
 from yfinance import Ticker
 
 from prices import get_prices, transactions
@@ -33,5 +34,5 @@ def get_type():
 
 @app.get("/")
 async def get_price_assets() -> List[Asset]:
-    tickers = ["VWRL.AS", "IWDA.AS", "BTC-EUR"]
+    tickers = ["VWRL.AS", "IWDA.AS", "BTC-EUR", "VVSM.DE"]
     return get_prices(tickers=tickers)
