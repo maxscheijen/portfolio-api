@@ -112,16 +112,27 @@ def get_prices(tickers: list) -> List[Asset]:
         else:
             ticker_type = "Crypto" 
         
+        transactions_history = history[["date",  ticker]].rename(columns={ticker: "value"}).dropna().to_dict(orient="records")
+        current_price = history[ticker].dropna().iloc[-1]
+        price_change_24h = history[ticker].dropna().iloc[-1] - history[ticker].dropna().iloc[-2]
+
+        number_of_assets = sum([tran["amount"] for tran in trans])
+        costs = sum([tran["price"] * tran["amount"] for tran in trans])
+
         assets.append(
             {
                 "id": ticker,
                 "symbol": ticker,
-                "current_price": history[ticker].dropna().iloc[-1],
-                "price_change_24h": history[ticker].dropna().iloc[-1] - history[ticker].dropna().iloc[-2],
+                "current_price": current_price,
+                "average_cost_share": costs / number_of_assets,
+                "price_change_24h": price_change_24h,
                 "total_dividend": total_dividend,
+                "current_asset_value":  current_price * number_of_assets,
+                "yesterday_asset_value":  (current_price - price_change_24h) * number_of_assets,
+                "number_of_assets": number_of_assets,
                 "type": ticker_type,
                 "transactions": trans,
-                "history": history[["date",  ticker]].rename(columns={ticker: "value"}).dropna().to_dict(orient="records")
+                "history": transactions_history,
             }
         )
 
