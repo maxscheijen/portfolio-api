@@ -7,10 +7,12 @@ from schemas import Asset
 
 transactions = {
     "VVSM.DE": [
+        {"date": "2023-06-01", "price": 22.74, "amount": 4, "fee": 3.0},
         {"date": "2023-03-15", "price": 22.74, "amount": 4, "fee": 3.0},
     ],
     "VWRL.AS": [
-        {"date": "2023-04-03", "price": 97.95, "amount": 5},
+        {"date": "2023-06-01", "price": 100.24, "amount": 5, "fee": 1.0},
+        {"date": "2023-05-02", "price": 97.95, "amount": 5},
         {"date": "2023-04-03", "price": 97.77, "amount": 5},
         {"date": "2023-03-15", "price": 94.93, "amount": 5},
         {"date": "2023-02-01", "price": 97.92, "amount": 5},
